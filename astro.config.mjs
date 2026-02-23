@@ -6,7 +6,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://sakriphyce.com',
+	site: 'https://3gcodes.com',
 	integrations: [mdx(), sitemap()],
 	markdown: {
 		shikiConfig: {
