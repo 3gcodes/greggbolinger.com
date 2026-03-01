@@ -1,10 +1,15 @@
 ---
+import { Image } from "astro:assets";
+import avatar from "../assets/3gcodes.png";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE } from "../consts";
 ---
 
 <BaseLayout title={`About | ${SITE_TITLE}`} description="About 3GCodes.">
   <div class="prose">
+    <div class="avatar">
+      <Image src={avatar} alt="3GCodes" width={200} height={200} />
+    </div>
     <h1>About</h1>
     <p>I'm a software engineer who never really stopped being curious.</p>
     <p>
@@ -51,3 +56,18 @@ import { SITE_TITLE } from "../consts";
     <p>Thanks for stopping by.</p>
   </div>
 </BaseLayout>
+
+<style>
+  .avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-lg);
+  }
+  .avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: var(--border);
+  }
+</style>
