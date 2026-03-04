@@ -1,0 +1,66 @@
+---
+title: "The Quiet Risk of Blaming AI Instead of Ourselves"
+description: "AI tools can generate code, refactor functions, write tests, and propose architectural changes. But they introduce a subtle and dangerous shift in accountability if we are not careful."
+pubDate: 2026-03-04
+heroImage: "../../assets/the-quiet-risk-of-blaming-ai.png"
+heroImageCaption: "Photo by <a href='https://www.flickr.com/photos/guitavares/1703252007'>guitavares</a> on Flickr"
+tags: ["ai", "engineering", "culture", "accountability"]
+---
+
+In software engineering, we are entering an era where AI tools can generate code, refactor functions, write tests, summarize pull requests, and even propose architectural changes. These tools are powerful. They can increase speed and reduce friction. But they introduce a subtle and dangerous shift in accountability if we are not careful.
+
+The danger is not that AI writes imperfect code. Engineers have always written imperfect code. The danger is that teams begin to attribute poor outcomes to the tool instead of the human decisions that allowed those outcomes to reach production.
+
+## AI Does Not Own the System
+
+When a production incident happens, ownership matters. Historically, if a bug slipped through, we examined the design, the implementation, the tests, and the review process. We looked at ourselves. With AI in the loop, there is a temptation to say, "The model generated that."
+
+But AI does not deploy code. AI does not approve pull requests. AI does not decide to skip edge case testing because a deadline is tight. Humans do. The responsibility chain remains intact even if the code originated from a prompt.
+
+Shifting blame to AI weakens engineering culture. It dilutes the sense of craftsmanship and stewardship that keeps systems healthy over time.
+
+## AI Is a Tool, Not an Engineer
+
+It is easy to anthropomorphize AI. It writes in complete sentences. It explains its reasoning. It appears confident. That presentation layer can blur a critical boundary.
+
+AI does not understand your domain. It does not understand the long term maintenance cost of a shortcut. It does not carry the pager. It does not feel the friction of debugging a subtle race condition at 2 a.m.
+
+When engineers treat AI output as authoritative rather than advisory, they outsource judgment. Judgment is the core of engineering. Without it, teams become operators of generated artifacts rather than designers of intentional systems.
+
+## The Illusion of Velocity
+
+AI can increase local productivity. A function appears faster. A test suite grows quickly. Documentation materializes in seconds. But if the output is not carefully reviewed, tested, and aligned with system constraints, the gains are temporary.
+
+Unexamined AI generated code can introduce hidden coupling, inconsistent patterns, and subtle performance issues. These do not surface immediately. They accumulate. The initial speed becomes future drag.
+
+When defects emerge later, blaming the model hides the real issue. The issue is insufficient review, unclear architectural guardrails, or a culture that values throughput over comprehension.
+
+## Accountability Cannot Be Automated
+
+Software engineering is not just about producing code. It is about producing outcomes. Reliable systems. Maintainable systems. Secure systems.
+
+AI can assist in code creation, but it cannot own the outcome of a feature in production. It cannot guarantee that the integration between two services respects business invariants. It cannot decide whether a generated SQL query aligns with data retention policies.
+
+Engineers must remain accountable for both output and outcome. If a feature behaves incorrectly in production, the root cause analysis cannot stop at "AI wrote it." The real question is why the system of review, testing, and monitoring allowed that behavior to ship.
+
+## The Erosion of Learning
+
+One of the quiet costs of over relying on AI is the erosion of skill development. Engineers learn by wrestling with problems, exploring tradeoffs, and debugging their own mistakes. If AI becomes a default generator rather than a collaborator, engineers may skip the cognitive work that builds expertise.
+
+When something breaks, they may not fully understand the code path. That lack of understanding increases the impulse to blame the tool. The cycle reinforces itself.
+
+## Healthy AI Usage in Engineering
+
+The solution is not to reject AI. It is to use it intentionally. AI can accelerate scaffolding, suggest refactorings, and highlight edge cases. It can act as a second set of eyes. But it must sit inside a framework of human oversight.
+
+Teams should establish clear norms. AI generated code must be reviewed with the same rigor as human written code. Architectural decisions must remain explicit and documented. Test coverage must remain meaningful, not decorative. Observability must be strong enough to detect unexpected behavior early.
+
+Most importantly, teams must preserve a culture of ownership. If you merge it, you own it. If it runs in production, your team owns the outcome. The origin of the code is irrelevant.
+
+## The Real Risk
+
+The real risk is not that AI will write bad code. The real risk is that humans will quietly lower their standards because the tool feels intelligent.
+
+Blaming AI for failures creates distance between engineers and their systems. That distance reduces care. Reduced care increases fragility.
+
+AI can amplify good engineering practices, or it can magnify weak ones. The difference is not in the model. It is in whether humans remain actively responsible for what they build.
